@@ -1,0 +1,152 @@
+//PROGRAM PEMESANAN DI CAFE 
+//maaf itu nama repositorynya harusnya C++, tapi sudah terlanjur dan saya malas mengganti
+#include <iostream>
+using namespace std;
+int main ()
+{
+  int kode, price, jml, tot, byr, kbl;	//kbl : kembalian
+  char mad;			//mad : masih ada
+  do
+    {
+      cout << "         CAFE ISTRI           " << endl;
+      cout << "      SAYANGI UR BELLY        " << endl;
+      cout << "       Ga Beli Ga ASIQ        " << endl;
+      cout << "   Jl. ni Saja Apa Yang Ada   " << endl;
+      cout << "========================================" << endl;
+      cout << "" << endl;
+      cout << " ______________________________________" << endl;
+      cout << "|     Menu Makanan      |      Harga   |" << endl;
+      cout << "|_______________________|______________|" << endl;
+      cout << "|                       |              |" << endl;
+      cout << "|   1. Tteobboki        |  Rp. 30.000  |" << endl;
+      cout << "|   2. Kimbap           |  Rp. 35.000  |" << endl;
+      cout << "|   3. Japchae          |  Rp. 50.000  |" << endl;
+      cout << "|   4. Miyeok Guk       |  Rp. 40.000  |" << endl;
+      cout << "|   5. Dakkochi         |  Rp. 20.000  |" << endl;
+      cout << "|   6. Lemon Juice      |  Rp. 15.000  |" << endl;
+      cout << "|   7. Banana Milk      |  Rp. 20.000  |" << endl;
+      cout << "|_______________________|______________|" << endl;
+      cout << "" << endl;
+      cout << "Masukan Pilihan Anda : ";
+      cin >> kode;
+      switch (kode)
+	{
+	case 1:
+	  cout << '\n' << "Tteobboki" << endl;
+	  price = 30000;
+	  cout << "Masukan Jumlah Porsi : ";
+	  cin >> jml;
+	  tot = price * jml;
+	  cout << "Total Harganya       : Rp. " << tot << endl;
+	  cout << "Dibayar              : Rp. ";
+	  cin >> byr;
+	  kbl = byr - tot;
+	  cout << "Kembali              : Rp." << kbl << endl;
+	  cout << "" << endl;
+	  cout << "Masih Ada Yang Lain Y/T : ";
+	  cin >> mad;
+	  break;
+
+	case 2:
+	  cout << '\n' << "Kimbap" << endl;
+	  price = 35000;
+	  cout << "Masukan Jumlah Porsi : ";
+	  cin >> jml;
+	  tot = price * jml;
+	  cout << "Total Harganya       : Rp. " << tot << endl;
+	  cout << "Dibayar              : Rp. ";
+	  cin >> byr;
+	  kbl = byr - tot;
+	  cout << "Kembali              : Rp." << kbl << endl;
+	  cout << "" << endl;
+	  cout << "Masih Ada Yang Lain Y/T : ";
+	  cin >> mad;
+	  break;
+
+	case 3:
+	  cout << '\n' << "Japchae" << endl;
+	  price = 50000;
+	  cout << "Masukan Jumlah Porsi : ";
+	  cin >> jml;
+	  tot = price * jml;
+	  cout << "Total Harganya       : Rp. " << tot << endl;
+	  cout << "Dibayar              : Rp. ";
+	  cin >> byr;
+	  kbl = byr - tot;
+	  cout << "Kembali              : Rp." << kbl << endl;
+	  cout << "" << endl;
+	  cout << "Masih Ada Yang Lain Y/T : ";
+	  cin >> mad;
+	  break;
+
+	case 4:
+	  cout << '\n' << "Miyeok Guk" << endl;
+	  price = 40000;
+	  cout << "Masukan Jumlah Porsi : ";
+	  cin >> jml;
+	  tot = price * jml;
+	  cout << "Total Harganya       : Rp. " << tot << endl;
+	  cout << "Dibayar              : Rp. ";
+	  cin >> byr;
+	  kbl = byr - tot;
+	  cout << "Kembali              : Rp." << kbl << endl;
+	  cout << "" << endl;
+	  cout << "Masih Ada Yang Lain Y/T : ";
+	  cin >> mad;
+	  break;
+
+	case 5:
+	  cout << '\n' << "Dakkochi" << endl;
+	  price = 20000;
+	  cout << "Masukan Jumlah Porsi : ";
+	  cin >> jml;
+	  tot = price * jml;
+	  cout << "Total Harganya       : Rp. " << tot << endl;
+	  cout << "Dibayar              : Rp. ";
+	  cin >> byr;
+	  kbl = byr - tot;
+	  cout << "Kembali              : Rp." << kbl << endl;
+	  cout << "" << endl;
+	  cout << "Masih Ada Yang Lain Y/T : ";
+	  cin >> mad;
+	  break;
+
+	case 6:
+	  cout << '\n' << "Lemon Juice" << endl;
+	  price = 15000;
+	  cout << "Masukan Jumlah Porsi : ";
+	  cin >> jml;
+	  tot = price * jml;
+	  cout << "Total Harganya       : Rp. " << tot << endl;
+	  cout << "Dibayar              : Rp. ";
+	  cin >> byr;
+	  kbl = byr - tot;
+	  cout << "Kembali              : Rp." << kbl << endl;
+	  cout << "" << endl;
+	  cout << "Masih Ada Yang Lain Y/T : ";
+	  cin >> mad;
+	  break;
+
+	case 7:
+	  cout << '\n' << "Banana Milk" << endl;
+	  price = 20000;
+	  cout << "Masukan Jumlah Porsi : ";
+	  cin >> jml;
+	  tot = price * jml;
+	  cout << "Total Harganya       : Rp. " << tot << endl;
+	  cout << "Dibayar              : Rp. ";
+	  cin >> byr;
+	  kbl = byr - tot;
+	  cout << "Kembali              : Rp." << kbl << endl;
+	  cout << "" << endl;
+	  cout << "Masih Ada Yang Lain Y/T : ";
+	  cin >> mad;
+	  break;
+	default:
+	  cout << "Kode Yang Anda Masukan Tidak Tersedia\n";
+	}
+    }
+  while (mad /= 'Y');
+  cout << "Terima Kasih Atas Kunjungan Anda Di CAFE ISTRI";
+  return 0;
+}
